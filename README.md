@@ -160,13 +160,3 @@ Licensed under the Apache 2.0 License — see [`LICENSE`](./LICENSE) for details
 
 **Author**: Axel Oscar
 Project maintained as part of ongoing research in cooperative edge & blockchain architectures.
-
-
-
-
-
-
-
-
-**Author**: Axel Oscar
-Project maintained as part of ongoing research in cooperative edge & blockchain architectures.
