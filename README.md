@@ -21,7 +21,7 @@ The simulation tracks task completion, UAV battery life, EC compute resources, a
 > For identical results, use the provided Hyperledger network setup or adapt your configurations accordingly:  
 > [https://github.com/AxelOscar/Hyperledger-Blockchain-Fabric-Network-COBRA](https://github.com/AxelOscar/Hyperledger-Blockchain-Fabric-Network-COBRA)
 
-You can find in this repository, 2 Folder and 2 Files :
+You can find in this repository :
 - The ***"fabric_simulation_client_code"*** folder contains some code in go to interecact with the Hyperledger blockchain, the ***"clean"*** code allow to delete all data in the blockchain, the ***"queryAll"*** code allow to show the data of an ledger in this case the device ledger or the task ledger, the ***"register_device"*** allow to register massively device in the blockchain you can chosse the number of device and the proportion beetween EC or UAV, finnaly the ***"cobra-config"*** yaml file is the most important is allow the communication beetween the client and the blockcahin he containes parameter and credential to acces on the blockchain.
 -  The ***"result"*** folder contains different csv result files of the simulation and also a python code to generate graphes.
 -  For the 2 files, there are the ***"Cobra_Algo_SC"*** go file is the smart contract inplement in my Blockchain and the ***"simulation"*** go file to simulate the task send and have the result, a more detailed explanation is available below.
@@ -122,20 +122,6 @@ Written in Go, it performs:
   * UAV battery & EC load
  
  Use `cobra-config.yaml` to configure Fabric connection.
-
-## 🛠️ Go SDK Setup (Optional)
-
-```bash
-cd fabric-client/
-go mod init fabric-client
-go get github.com/hyperledger/fabric-sdk-go
-go mod tidy
-go mod vendor
-go build simulation.go
-./simulation
-```
-
-Edit `cobra-config.yaml` to match your Fabric parameters (channel, MSP ID, etc.).
 
 ## 🧰 Repository Structure
 
